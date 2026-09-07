@@ -1,0 +1,25 @@
+{
+    "version": "0.5.4",
+    "description": "HTTP, HTTPS and WebSocket debugging proxy",
+    "homepage": "https://github.com/Daloshka/Librium",
+    "license": "MIT",
+    "url": "https://github.com/Daloshka/Librium/releases/download/v0.5.4/Librium.0.5.4.exe#/Librium.exe",
+    "hash": "fed1947ad2167b546c2e0bf8aeb87778d8e1825aa86cf123cfd747a10373bb5d",
+    "bin": "Librium.exe",
+    "shortcuts": [
+        [
+            "Librium.exe",
+            "Librium"
+        ]
+    ],
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/Daloshka/Librium/releases/download/v$version/Librium.$version.exe#/Librium.exe"
+    },
+    "notes": [
+        "Librium keeps its CA certificate and its SQLite history in %LOCALAPPDATA%\\Librium, outside the Scoop app directory, so they survive updates and are left behind by 'scoop uninstall librium'. Delete that folder by hand for a clean slate.",
+        "Set LIBRIUM_DATA_DIR to move that data anywhere else, for example onto the same portable drive as Scoop itself.",
+        "The UI listens on http://127.0.0.1:3000 and the proxy on 127.0.0.1:8080; LIBRIUM_UI_PORT and LIBRIUM_PROXY_PORT change both.",
+        "For HTTPS, install the generated CA from %LOCALAPPDATA%\\Librium\\ca.crt into 'Trusted Root Certification Authorities'."
+    ]
+}
