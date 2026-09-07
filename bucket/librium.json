@@ -1,10 +1,10 @@
 {
-    "version": "0.5.4",
+    "version": "0.6.0",
     "description": "HTTP, HTTPS and WebSocket debugging proxy",
     "homepage": "https://github.com/Daloshka/Librium",
     "license": "MIT",
-    "url": "https://github.com/Daloshka/Librium/releases/download/v0.5.4/Librium.0.5.4.exe#/Librium.exe",
-    "hash": "fed1947ad2167b546c2e0bf8aeb87778d8e1825aa86cf123cfd747a10373bb5d",
+    "url": "https://github.com/Daloshka/Librium/releases/download/v0.6.0/Librium.0.6.0.exe#/Librium.exe",
+    "hash": "d398dd604ccbba7ab8a3a3d7d3a7ab844a3a844e41ceee4ed03019354eeb55dd",
     "bin": "Librium.exe",
     "shortcuts": [
         [
