@@ -19,9 +19,10 @@ scoop update librium
 scoop uninstall librium
 ```
 
-Librium keeps its CA certificate and its SQLite history in `%LOCALAPPDATA%\Librium`,
+Librium keeps its CA certificate and its SQLite history in `%LOCALAPPDATA%\Librium`, and
+its filter sessions, logs and the Chrome proxy profile in `%APPDATA%\librium-desktop`,
 outside the Scoop app directory, so they survive updates and are left behind on
-uninstall — delete that folder by hand for a clean slate. Set `LIBRIUM_DATA_DIR` to put
+uninstall — delete both folders by hand for a clean slate. Set `LIBRIUM_DATA_DIR` to put
 that data somewhere else, for example next to Scoop on a portable drive.
 
 ## What you get
@@ -38,8 +39,8 @@ and `LIBRIUM_PROXY_PORT` change both. For HTTPS, install
 tooling works:
 
 ```powershell
-scoop update
-bin\checkver.ps1 librium -u   # from a Scoop checkout
+scoop update                                   # users: picks up the new manifest
+.\bin\checkver.ps1 -App librium -Dir C:\path\to\scoop-bucket\bucket -Update   # maintainers, from a Scoop checkout
 ```
 
 From macOS or Linux use the script in this repo instead:
